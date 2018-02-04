@@ -38,7 +38,6 @@ func main() {
 	url := "http://" + httpAddr
 
 	go func() {
-
 		if waitServer(url) && *flagOpenBrowser && startBrowser(url) {
 			log.Printf("A browser window should open. If not, please visit %s", url)
 		} else {
