@@ -67,7 +67,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 - [QingCloud 青云](http://qingcloud.com/), 应用平台开发部, 高级软件工程师
 - [Go语言代码](https://golang.org/CONTRIBUTORS) 贡献者(ChaiShushan)
 - [Go语言圣经](https://github.com/golang-china/gopl-zh) 翻译者
-- [Go语言高级编程](https://github.com/chai2010/advanced-go-programming-book) 作者
+- [Go语言高级编程](https://github.com/chai2010/advanced-go-programming-book) 作者(开发中...)
 - [OpenPitrix](https://github.com/openpitrix/openpitrix) 多云应用管理平台开发者
 - https://github.com/chai2010
 
@@ -160,6 +160,8 @@ func main() {
 }
 ```
 
+-----
+
 编译运行:
 
 ```
@@ -180,7 +182,6 @@ $ go run examples/hello-v1/main.go
 Note: 小问题: C 字符串什么时候释放?
 
 ---
-
 ### 调用自定义的C函数
 -----------------
 
@@ -203,8 +204,9 @@ func main() {
 }
 ```
 
----
+------------
 
+---
 ### C代码模块化
 ------------
 
@@ -233,8 +235,9 @@ examples/hello-v3/main.go:
 import "C"
 ```
 
----
+----------
 
+---
 ### C代码模块化 - 改用Go重写C模块
 ----------------------------
 
@@ -258,12 +261,14 @@ func SayHello(s *C.char) {
 }
 ```
 
+------
+
 - 函数参数去掉 `const` 修饰符
 - hello.c => hello.go
 
 ---
-
 ### 手中无剑, 心中有剑
+-------------------
 
 examples/hello-v5/hello.go:
 
@@ -284,13 +289,15 @@ func SayHello(s *C.char) {
 }
 ```
 
+------
+
 - C 语言版本 SayHello 函数实现只存在于心中
 - 面向纯 C 接口的 Go 语言编程
 
 
 ---
-
 ### 忘掉心中之剑
+--------------
 
 ```go
 // +build go1.10
@@ -310,6 +317,8 @@ func SayHello(s string) {
 	fmt.Print(s)
 }
 ```
+
+----------
 
 - GoString 也是一种 C 字符串
 
@@ -2066,15 +2075,15 @@ truct Person {
 ```go
 type Int int
 
-func (p Int) String() string {
-	return fmt.Sprintf("%d", int(p))
+func (p Int) Twice() int {
+	return int(p)*2
 }
 ```
 
 ```go
 func main() {
 	var x = int(42)
-	fmt.Println(x)
+	fmt.Println(Int(x).Twice())
 }
 ```
 ------
@@ -2088,9 +2097,9 @@ func main() {
 
 ```c
 struct Int {
-	std::string String() {
+	int Twice() {
 		const int* p = (int*)(this);
-		return sprintf("%d", *p);
+		return (*p) * 2;
 	}
 };
 ```
@@ -2098,7 +2107,8 @@ struct Int {
 ```c
 int main() {
 	int x = 42;
-	std::cout << (Int*)(&x)->String();
+	int v = ((Int*)(&x))->Twice();
+	printf("%d\n", v);
 	return 0;
 }
 ```
