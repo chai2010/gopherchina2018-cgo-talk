@@ -321,6 +321,7 @@ func SayHello(s string) {
 ----------
 
 - GoString 也是一种 C 字符串
+- Go的一切都可以从C理解
 
 
 Note:
@@ -340,11 +341,40 @@ Note:
 ## 类型转换
 ----------
 
+- 指针 - unsafe 包的灵魂
+- Go字符串和切片的结构
+
+--------
+
 - Go指针和C指针之间的转换
 - 数值和指针之间的转换
 - 不同类型指针转换
-- 字符串和切片
+- 字符串和切片转换
 - ...
+
+
+---
+### 指针 - unsafe 包的灵魂
+---------------------------
+
+Go版无类型指针和数值化的指针:
+
+```go
+var p unsafe.Pointer = nil        // unsafe
+var q uintptr        = uintptr(p) // builtin
+```
+
+C版无类型指针和数值化的指针:
+
+```c
+void     *p = NULL;
+uintptr_t q = (uintptr_t)(p); // <stdint.h>
+```
+
+-----------
+
+- `unsafe.Pointer` 是 Go指针 和 C指针 转换的中介
+- `uintptr` 是 Go 中 数值 和 指针 转换的中介
 
 ---
 ### unsafe 包
@@ -385,29 +415,6 @@ alignof(type-id);           // C++ 11
 - sizeof 是关键字, 语义和 Go 基本一致
 - offsetof 是宏, 展开为表达式, 语义和 Go 基本一致
 - alignof 是新特性, 可忽略
-
----
-### unsafe 包的灵魂: 指针
----------------------------
-
-Go版无类型指针和数值化的指针:
-
-```go
-var p unsafe.Pointer = nil        // unsafe
-var q uintptr        = uintptr(p) // builtin
-```
-
-C版无类型指针和数值化的指针:
-
-```c
-void     *p = NULL;
-uintptr_t q = (uintptr_t)(p); // <stdint.h>
-```
-
------------
-
-- `unsafe.Pointer` 是 Go指针 和 C指针 转换的中介
-- `uintptr` 是 Go 中 数值 和 指针 转换的中介
 
 ---
 ### Go字符串和切片的结构
