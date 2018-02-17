@@ -2443,6 +2443,11 @@ $ go build -buildmode=c-shared -o gopkg.so main.go
 - `go get` 链
 - 多个非main包中导出C函数
 
+-----
+
+- CGO_XXX_ALLOW 白名单参数(Go1.10)
+- CC_FOR_goos_goarch(Go1.10)
+
 
 ---
 ### CFLAGS/CPPFLAGS/CXXFLAGS
@@ -2598,6 +2603,28 @@ $ go get github.com/chai2010/webp
 
 - 小问题: `_cgo_export.h` 只包含main包的导出函数
 - 手写头文件, 去掉对 `_cgo_export.h` 文件的依赖
+
+
+---
+### CGO_XXX_ALLOW 白名单参数(Go1.10)
+-----------------
+
+- CGO_CFLAGS_ALLOW/CGO_CXXFLAGS_ALLOW
+- CGO_LDFLAGS_ALLOW
+
+-------
+
+- gcc 的 `-fplugin` 可调用外部插件
+- go get 时会有安全漏洞
+- 白名单采用正则匹配
+
+
+---
+### CC_FOR_goos_goarch(Go1.10)
+-----------------
+
+- cgo 交叉编译时指定gcc命令
+- 比如 CC_FOR_darwin_arm64 用于 iOS
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 ***
