@@ -8,6 +8,11 @@
 1. Chrome 打开: http://localhost:8081
 1. 常用快捷键: `?`/`F`/`ESC`
 
+#### macOS 系统
+
+1. 鼠标双击打开 start-web-server-on-macos.scpt 文件, 点击运行, 启动 Web 服务.
+1. 用浏览器打开  http://localhost:8081
+
 
 ## 导出 PDF 文件
 
