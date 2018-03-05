@@ -39,8 +39,8 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 # 深入CGO编程 <!-- .element: style="color:DarkSlateGray; font-family:'Hiragino Sans GB';" -->
 ------------
 
-#### [GopherChina 2018 - 中国·上海](http://gopherchina.org/) <!-- .element: style="color:DarkSlateGray;" -->
-#### [chai2010 (柴树杉)](https://github.com/chai2010) <!-- .element: style="color:DarkSlateGray;" --> [@青云](https://www.qingcloud.com/) <!-- .element: style="color:DarkSlateGray;" -->
+#### [chai2010 (柴树杉)](https://github.com/chai2010) <!-- .element: style="color:DarkSlateGray;" -->
+#### [@青云QingCloud](https://www.qingcloud.com/) <!-- .element: style="color:DarkSlateGray;" -->
 
 
 
@@ -68,7 +68,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 ## 个人简介
 ----------
 
-- [QingCloud 青云](http://qingcloud.com/), 应用平台开发部, 高级软件工程师
+- [@青云QingCloud](http://qingcloud.com/), 应用平台研发工程师
 - [Go语言代码](https://golang.org/CONTRIBUTORS) 贡献者(ChaiShushan)
 - [Go语言圣经](https://github.com/golang-china/gopl-zh) 翻译者
 - [Go语言高级编程](https://github.com/chai2010/advanced-go-programming-book) 作者(开发中...)
@@ -2708,7 +2708,7 @@ extern void SayHello();
 
 #### [chaishushan@gmail.com](https://github.com/chai2010)
 
-#### [@青云](https://www.qingcloud.com/)
+#### [@青云QingCloud](https://www.qingcloud.com/)
 
 #### ![](images/chai2010-gopherchina2018-cgo-talk.png) <!-- .element: style="width:20%;" -->
 
