@@ -5,8 +5,16 @@
 ## 本地浏览
 
 1. `go run server.go` 启动服务
-1. 浏览器打开 http://localhost:8081
+1. Chrome 打开: http://localhost:8081
 1. 常用快捷键: `?`/`F`/`ESC`
+
+
+## 导出 PDF 文件
+
+1. `go run server.go` 启动服务
+1. Chrome 打开: http://localhost:8081/index-pdf.html?print-pdf
+1. Chrome 打印为 PDF 格式
+
 
 ## 其它文件
 
