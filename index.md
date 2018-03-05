@@ -34,11 +34,15 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
-# 深入CGO编程
+<section data-background="images/gopherchina2018-background.png">
+
+# 深入CGO编程 <!-- .element: style="color:DarkSlateGray; font-family:'Hiragino Sans GB';" -->
 ------------
 
-#### [GopherChina 2018 - 中国·上海](http://gopherchina.org/)
-#### [chai2010 (柴树杉)](https://github.com/chai2010) [@青云](https://www.qingcloud.com/)
+#### [GopherChina 2018 - 中国·上海](http://gopherchina.org/) <!-- .element: style="color:DarkSlateGray;" -->
+#### [chai2010 (柴树杉)](https://github.com/chai2010) <!-- .element: style="color:DarkSlateGray;" --> [@青云](https://www.qingcloud.com/) <!-- .element: style="color:DarkSlateGray;" -->
+
+
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 ***
