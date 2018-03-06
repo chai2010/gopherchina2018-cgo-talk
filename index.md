@@ -62,6 +62,14 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 #### https://github.com/golang/go/commits?author=wgj-zz
 
 
+---
+### 幻灯片 网址
+-------------
+
+#### ![](images/chai2010-gopherchina2018-cgo-talk.png) <!-- .element: style="width:40%;" -->
+
+#### https://github.com/chai2010/gopherchina2018-cgo-talk
+
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 ***
 

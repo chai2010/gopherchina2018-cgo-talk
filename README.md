@@ -2,7 +2,7 @@
 
 [![](screenshot.png)](https://chai2010.github.io/gopherchina2018-cgo-talk/)
 
-- [深入CGO编程](https://chai2010.github.io/gopherchina2018-cgo-talk/) - by [chai2010](https://github.com/chai2010)
+- [深入CGO编程(幻灯片)](https://chai2010.github.io/gopherchina2018-cgo-talk/) - by [chai2010](https://github.com/chai2010)
 
 ## 本地浏览
 
