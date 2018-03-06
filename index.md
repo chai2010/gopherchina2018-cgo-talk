@@ -61,7 +61,6 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 
 #### https://github.com/golang/go/commits?author=wgj-zz
 
-
 ---
 ### 幻灯片 网址
 -------------
@@ -127,9 +126,9 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 --------
 
 1. 没有银弹, Go语言也不是银弹, 无法解决全部问题
-2. 通过CGO可以继承C/C++将近半个世纪的软件遗产
+2. 通过CGO可以继承C/C++将近半个世纪的软件积累
 3. 通过CGO可以用Go给其它系统写C接口的共享库
-4. CGO是Go和其它语言直接通讯的接口
+4. CGO是Go和其它语言直接通讯的桥梁
 
 --------
 
@@ -187,7 +186,7 @@ $ go run examples/hello-v1/main.go
 ----------
 
 - `import "C"` 表示启用 CGO
-- `import "C"` 前的注释表示包含 `<stdio.h>` C头文件
+- `import "C"` 前的注释表示包含C头文件: `<stdio.h>` 
 - `C.CString` 表示将 Go 字符串转为 C 字符串
 - `C.puts` 调用C语言的puts函数输出 C 字符串
 
@@ -423,7 +422,7 @@ alignof(type-id);           // C++ 11
 
 -------
 
-- C指针都安全性永远需要自己负责
+- C指针的安全性永远需要自己负责
 - sizeof 是关键字, 语义和 Go 基本一致
 - offsetof 是宏, 展开为表达式, 语义和 Go 基本一致
 - alignof 是新特性, 可忽略
@@ -469,16 +468,16 @@ typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;
 ```go
 // int32 => *C.char
 var x = int32(9527)
-var p *C.char = (*C.char)(unsafe.Pointer(uintprt(x)))
+var p *C.char = (*C.char)(unsafe.Pointer(uintptr(x)))
 
 // *C.char => int32
 var y *C.char
-var q int32 = int32(uintprt(unsafe.Pointer(y)))
+var q int32 = int32(uintptr(unsafe.Pointer(y)))
 ```
 -----
 
 1. 第一步: `int32` => `uintprt`
-1. 第二步: `uintprt` => `unsafe.Pointer`
+1. 第二步: `uintptr` => `unsafe.Pointer`
 1. 第三步: `unsafe.Pointer` => `*C.char`
 1. 反之亦然
 
@@ -532,7 +531,7 @@ pHdr.Cap = qHdr.Cap * unsafe.Sizeof(q[0]) / unsafe.Sizeof(p[0])
 ------
 
 - 所有切片拥有相同的头部 `reflect.SliceHeader`
-- 重新切片构造头部即可完成转换
+- 重新构造切片头部即可完成转换
 
 ---
 ### 示例: float64 数组排序优化
@@ -888,7 +887,7 @@ func GoAdd(a, b C.int) C.int {
 ```
 ----------------
 
-- Go:`main` => C:`go_add_proxy` => Go:`GoAdd` =
+- Go:`main` => C:`go_add_proxy` => Go:`GoAdd`
 
 
 ---
@@ -1343,12 +1342,12 @@ func qsort(slice interface{}, fn func(a, b int) int) {
 
 - Go中有堆也有栈
 - 但是不知道它们在哪里
-- 不仅仅如此, 栈还会到处乱串...
+- 不仅仅如此, 栈还会到处乱窜...
 
 --------------
 
 - 推论1: 无法知道变量是在栈上还是在堆上
-- 推论2: 任何变量都可能在内存到处乱串
+- 推论2: 任何变量都可能在内存到处乱窜
 
 --------------
 
@@ -1915,7 +1914,7 @@ int person_get_age(person_handle_t p);
 
 --------
 
-- 以 C 接口的方式从新抽象前面的 Go 对象
+- 以 C 接口的方式重新抽象前面的 Go 对象
 - `person_handle_t` 类似对象指针, 只是类似
 - `uintptr_t` 类似指针, 但不是指针
 
@@ -2336,7 +2335,7 @@ lib /def:number.def /machine:x64
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 ***
 
-## 用编写Python扩展
+## 编写Python扩展
 -----------------
 
 - ctypes: 基于纯C接口
@@ -2616,7 +2615,7 @@ $ go get github.com/chai2010/webp
 
 -----
 
-- cgo编程原则: 面向C接口编程, 必须手写手写头文件
+- cgo编程原则: 面向C接口编程, 必须手写头文件
 
 -----
 
