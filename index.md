@@ -129,6 +129,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 - 快速入门
 - 类型转换
 - 函数调用
+- CGO内部机制
 - 实战: 包装 `C.qsort`
 - 内存模型
 
@@ -370,12 +371,6 @@ Note:
 为何不使用 `C.GoString` 类型?
 
 
----
-### CGO生成的中间文件
--------------------
-
-#### ![](images/cgo-generated-files.dot.png) <!-- .element: width="95%" -->
-
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 ***
 
@@ -592,7 +587,6 @@ func main() {
 
 - Go调用C函数
 - C调用Go导出函数
-- 内部调用流程
 - 深度调用: Go => C => Go => C
 
 ---
@@ -806,6 +800,65 @@ func SayHello(s string) {
 - `_GoString_` 是预定义的类型, 和 `GoString` 等价
 - 避免手写函数声明时出现循环依赖
 
+
+---
+### 深度调用: Go => C => Go => C (A)
+-------------------------------
+
+```go
+/*
+static int c_add(int a, int b) {
+	return a+b;
+}
+
+static int go_add_proxy(int a, int b) {
+	extern int GoAdd(int a, int b);
+	return GoAdd(a, b);
+}
+*/
+import "C"
+```
+----------------
+
+- `go_add_proxy` 调用Go导出的 `GoAdd`
+
+
+---
+### 深度调用: Go => C => Go => C (B)
+-------------------------------
+
+```go
+func main() {
+	C.c_add(1, 1)
+}
+
+//export GoAdd
+func GoAdd(a, b C.int) C.int {
+	return a + b
+}
+```
+----------------
+
+- Go:`main` => C:`go_add_proxy` => Go:`GoAdd`
+
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+***
+## CGO内部机制
+-------------
+
+- CGO生成的中间文件
+- 内部调用流程: Go -> C
+- 内部调用流程: C -> Go
+
+
+---
+### CGO生成的中间文件
+-------------------
+
+#### ![](images/cgo-generated-files.dot.png) <!-- .element: width="95%" -->
+
+
 ---
 ### 内部调用流程: Go -> C
 -------------
@@ -832,7 +885,6 @@ func main() {
 -------------
 
 #### ![](images/call-c-sum-v1.uml.png) <!-- .element: width="95%" -->
-
 
 ---
 ### 内部调用流程: C -> Go
@@ -879,45 +931,6 @@ int main() {
 ----------------
 
 #### ![](images/call-c-sum-v2.uml.png) <!-- .element: width="95%" -->
-
----
-### 深度调用: Go => C => Go => C (A)
--------------------------------
-
-```go
-/*
-static int c_add(int a, int b) {
-	return a+b;
-}
-
-static int go_add_proxy(int a, int b) {
-	extern int GoAdd(int a, int b);
-	return GoAdd(a, b);
-}
-*/
-import "C"
-```
-----------------
-
-- `go_add_proxy` 调用Go导出的 `GoAdd`
-
----
-### 深度调用: Go => C => Go => C (B)
--------------------------------
-
-```go
-func main() {
-	C.c_add(1, 1)
-}
-
-//export GoAdd
-func GoAdd(a, b C.int) C.int {
-	return a + b
-}
-```
-----------------
-
-- Go:`main` => C:`go_add_proxy` => Go:`GoAdd`
 
 
 ---
