@@ -39,7 +39,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 # 深入CGO编程 <!-- .element: style="color:DarkSlateGray; font-family:'Hiragino Sans GB';" -->
 ------------
 
-#### [chai2010 (柴树杉)](https://github.com/chai2010) <!-- .element: style="color:DarkSlateGray;" -->
+#### [chai2010 (柴树杉)](https://chai2010.cn) <!-- .element: style="color:DarkSlateGray;" -->
 #### [@青云QingCloud](https://www.qingcloud.com/) <!-- .element: style="color:DarkSlateGray;" -->
 
 
@@ -81,7 +81,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 - [Go语言高级编程](https://github.com/chai2010/advanced-go-programming-book) 作者(开发中...)
 - [OpenPitrix](https://github.com/openpitrix/openpitrix) 多云应用管理平台开发者
 - https://github.com/chai2010
-
+- https://chai2010.cn
 
 
 ---
@@ -2756,7 +2756,7 @@ extern void SayHello();
 
 #### [https://github.com/chai2010](https://github.com/chai2010)
 
-#### [chaishushan@gmail.com](https://github.com/chai2010)
+#### [https://chai2010.cn](https://chai2010.cn)
 
 #### [@青云QingCloud](https://www.qingcloud.com/)
 
