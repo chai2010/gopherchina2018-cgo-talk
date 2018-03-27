@@ -34,9 +34,9 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
-<section data-background="images/gopherchina2018-background.png">
+<section data-background="images/gopherchina2018-background.jpg">
 
-# 深入CGO编程 <!-- .element: style="color:DarkSlateGray; font-family:'Hiragino Sans GB';" -->
+# 深入CGO编程 <!-- .element: style="color:DarkSlateGray;" -->
 ------------
 
 #### [chai2010 (柴树杉)](https://chai2010.cn) <!-- .element: style="color:DarkSlateGray;" -->
@@ -60,14 +60,6 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 #### ![](images/go-wgj-commits.png) <!-- .element: style="width:60%;" -->
 
 #### https://github.com/golang/go/commits?author=wgj-zz
-
----
-### 幻灯片 网址
--------------
-
-#### ![](images/chai2010-gopherchina2018-cgo-talk.png) <!-- .element: style="width:40%;" -->
-
-#### https://github.com/chai2010/gopherchina2018-cgo-talk
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 ***
@@ -103,7 +95,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 ### 珠三角技术沙龙深圳(2011.02.27)
 -------------------------------
 
-#### ![](images/sz-20110227.png) <!-- .element: width="65%" -->
+#### ![](images/sz-20110227.jpg) <!-- .element: width="65%" -->
 
 #### [更多图片](https://www.flickr.com/photos/yashi88/sets/72157626155161952/with/5482309510/)
 
@@ -122,7 +114,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 ## 内容大纲
 ----------
 
-- 为何要学CGO?
+- CGO的价值
 
 --------
 
@@ -149,7 +141,7 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 ***
 
-## 为何要学CGO?
+## CGO的价值
 --------------
 
 - 小调查: 有多少人 **听说过** 或 **简单使用过** CGO?
@@ -2760,6 +2752,5 @@ extern void SayHello();
 
 #### [@青云QingCloud](https://www.qingcloud.com/)
 
-#### ![](images/chai2010-gopherchina2018-cgo-talk.png) <!-- .element: style="width:20%;" -->
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
