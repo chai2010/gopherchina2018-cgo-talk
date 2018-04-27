@@ -1050,8 +1050,8 @@ static int compare(const void* a, const void* b) {
 	return ( *(int*)a - *(int*)b );
 }
 
-static void qsort_proxy(int values[], size_t len, size_t elemsize) {
-	qsort(values, DIM(values), sizeof(values[0]), compare);
+static void qsort_proxy(int* values, size_t len, size_t elemsize) {
+	qsort(values, len, sizeof(values[0]), compare);
 }
 */
 import "C"
@@ -1072,7 +1072,7 @@ import "fmt"
 func main() {
 	values := []int32{ 42, 9, 101, 95, 27, 25 };
 	C.qsort_proxy(
-		unsafe.Pointer(&values[0]),
+		(*C.int)(unsafe.Pointer(&values[0])),
 		C.size_t(len(values)),
 		C.size_t(unsafe.Sizeof(values[0])),
 	)
@@ -1094,7 +1094,7 @@ func main() {
 extern int go_qsort_compare(void* a, void* b);
 
 static int compare(const void* a, const void* b) {
-	return go_qsort_compare((void*)(a), (void*)(b))
+	return go_qsort_compare((void*)(a), (void*)(b));
 }
 */
 import "C"
