@@ -6,6 +6,7 @@
 - [深入CGO编程(Markdown格式)](https://github.com/chai2010/gopherchina2018-cgo-talk/blob/master/index.md) - by [chai2010](https://github.com/chai2010)
 - [Gopher China 2018 讲师专访－柴树杉](https://mp.weixin.qq.com/s/-_e5Zt4x0yYvgV4_fkxAGw)
 - [如何评价 2018 Gopher China 大会？](https://www.zhihu.com/question/272274153)
+- [GopherChina 2018 视频](http://www.itdks.com/dakashuo/playback/2046)
 - [《Go语言高级编程》第二章 CGO编程](https://github.com/chai2010/advanced-go-programming-book)
 
 ## 本地浏览
