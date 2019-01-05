@@ -77,12 +77,18 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 
 - [@青云QingCloud](http://qingcloud.com/), 应用平台研发工程师
 - [Go语言代码](https://golang.org/CONTRIBUTORS) 贡献者(ChaiShushan)
-- [Go语言圣经](https://github.com/golang-china/gopl-zh) 翻译者
-- [Go语言高级编程](https://github.com/chai2010/advanced-go-programming-book) 作者(开发中...)
+- [《Go语言高级编程》](https://github.com/chai2010/advanced-go-programming-book) 作者
+- [《WebAssembly标准入门》](https://github.com/chai2010/awesome-wasm-zh/blob/master/webassembly-primer.md) 作者
 - [OpenPitrix](https://github.com/openpitrix/openpitrix) 多云应用管理平台开发者
+
+----
+
 - https://github.com/chai2010
 - https://chai2010.cn
 
+
+---
+#### ![](images/chai2010-books.png) <!-- .element: width="90%" -->
 
 ---
 ### 珠三角技术沙龙深圳(2011.02.27)
