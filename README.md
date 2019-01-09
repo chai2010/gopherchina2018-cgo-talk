@@ -1,5 +1,9 @@
 # [GopherChina 2018](http://2018.gopherchina.org/) 报告
 
+*推广: [《WebAssembly标准入门》开始预售了，欢迎关注！](https://github.com/chai2010/awesome-wasm-zh/blob/master/webassembly-primer.md)([京东购买](https://item.jd.com/12499372.html))*
+
+----
+
 [![](screenshot.png)](https://chai2010.github.io/gopherchina2018-cgo-talk/)
 
 - [深入CGO编程(幻灯片)](https://chai2010.github.io/gopherchina2018-cgo-talk/) - by [chai2010](https://github.com/chai2010)
