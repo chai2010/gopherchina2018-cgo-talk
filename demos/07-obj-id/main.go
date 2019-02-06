@@ -36,7 +36,7 @@ func FreeGoString(p *C.char) {
 }
 
 func main() {
-	gs := "你好, QingCloud!"
+	gs := "你好, 武汉!"
 
 	cs := C.NewGoString(gs)
 	defer C.FreeGoString(cs)

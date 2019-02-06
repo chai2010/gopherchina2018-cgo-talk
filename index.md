@@ -40,8 +40,6 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 ------------
 
 #### [chai2010 (柴树杉)](https://chai2010.cn) <!-- .element: style="color:DarkSlateGray;" -->
-#### [@青云QingCloud](https://www.qingcloud.com/) <!-- .element: style="color:DarkSlateGray;" -->
-
 
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
@@ -75,11 +73,9 @@ Reveal.js 可能会需要 AJAX 异步加载 Markdown 文件, 可以在当前目�
 ## 个人简介
 ----------
 
-- [@青云QingCloud](http://qingcloud.com/), 应用平台研发工程师
 - [Go语言代码](https://golang.org/CONTRIBUTORS) 贡献者(ChaiShushan)
 - [《Go语言高级编程》](https://github.com/chai2010/advanced-go-programming-book) 作者
 - [《WebAssembly标准入门》](https://github.com/chai2010/awesome-wasm-zh/blob/master/webassembly-primer.md) 作者
-- [OpenPitrix](https://github.com/openpitrix/openpitrix) 多云应用管理平台开发者
 
 ----
 
@@ -2913,8 +2909,6 @@ extern void SayHello();
 #### [https://github.com/chai2010](https://github.com/chai2010)
 
 #### [https://chai2010.cn](https://chai2010.cn)
-
-#### [@青云QingCloud](https://www.qingcloud.com/)
 
 #### ![](images/chai2010-gopherchina2018-cgo-talk.png) <!-- .element: style="width:20%;" -->
 
