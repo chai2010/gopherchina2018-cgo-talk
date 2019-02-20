@@ -12,10 +12,6 @@ DOT_PNG_FILES=$(patsubst %.dot,%.dot.png,$(DOT_FILES))
 default: $(UML_PNG_FILES) $(DOT_PNG_FILES)
 	@echo "ok"
 
-logo:
-	convert logo-2018-01.png -resize 300x65 logo.png
-	@echo "ok"
-
 clean:
 	-rm *.dot.png
 	-rm *.uml.png
