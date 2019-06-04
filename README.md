@@ -16,6 +16,21 @@
 - [GopherChina 2018 视频](http://www.itdks.com/dakashuo/playback/2046)
 - [《Go语言高级编程》第二章 CGO编程](https://github.com/chai2010/advanced-go-programming-book)
 
+
+## 网易云课堂·光谷码农课堂
+
+https://study.163.com/provider/480000001914454/index.htm
+
+
+## 加入微信群
+
+![](https://chai2010.cn/static-images/weixin-golang.jpg)
+
+## 关注微信公众号(光谷码农/guanggu-coder)
+
+![](https://chai2010.cn/advanced-go-programming-book/weixin-guanggu-coder-logo.png)
+
+
 ## 本地浏览
 
 1. `go run server.go` 启动服务
