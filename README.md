@@ -21,15 +21,13 @@
 
 https://study.163.com/provider/480000001914454/index.htm
 
-
-## 加入微信群
-
-![](https://chai2010.cn/static-images/weixin-golang.jpg)
+![](https://raw.githubusercontent.com/chai2010/advanced-go-programming-book/master/163study-go-master.jpg)
 
 ## 关注微信公众号(光谷码农/guanggu-coder)
 
 ![](https://chai2010.cn/advanced-go-programming-book/weixin-guanggu-coder-logo.png)
 
+加入微信群：点击公众号菜单获取入群二维码。
 
 ## 本地浏览
 
