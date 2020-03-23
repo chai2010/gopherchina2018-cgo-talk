@@ -1,3 +1,8 @@
+- *赞助 BTC: 1Cbd6oGAUUyBi7X7MaR4np4nTmQZXVgkCW*
+- *赞助 ETH: 0x623A3C3a72186A6336C79b18Ac1eD36e1c71A8a6*
+
+----
+
 # [GopherChina 2018](http://2018.gopherchina.org/) 报告
 
 *推广: [《WebAssembly标准入门》开始预售了，欢迎关注！](https://github.com/chai2010/awesome-wasm-zh/blob/master/webassembly-primer.md)([京东购买](https://item.jd.com/12499372.html))*
@@ -53,6 +58,6 @@ https://study.163.com/provider/480000001914454/index.htm
 - [Go集成C/C++代码](chai2010-cgo-talk-sz-20110207.pdf) - chai2010, 珠三角技术沙龙深圳(2011.02.27)
 - [胡文 Go.ogle](go.ogle.pdf) - Fango
 
-## 扫码地址
+## 版权
 
-![](images/chai2010-gopherchina2018-cgo-talk.png)
+非商业使用，不可修改！
