@@ -1,14 +1,12 @@
+# [GopherChina 2018](http://2018.gopherchina.org/) 报告
+
 - *Go语言QQ群: 102319854, 1055927514*
 - *光谷码农课堂: https://study.163.com/provider/480000001914454/index.htm*
 - *凹语言(凹读音“Wa”)(The Wa Programming Language): https://github.com/wa-lang/wa*
 
 ----
 
-# [GopherChina 2018](http://2018.gopherchina.org/) 报告
-
-*推广: [《WebAssembly标准入门》开始预售了，欢迎关注！](https://github.com/chai2010/awesome-wasm-zh/blob/master/webassembly-primer.md)([京东购买](https://item.jd.com/12499372.html))*
-
-*推广: 欢迎关注 [光谷码农·每日新闻](https://guanggu-coder.cn/)*
+**蚂蚁金服招聘云原生方向和编程语言方向岗位(杭州/P7)：云原生方向要求熟悉k8s配套工具，如kubectl、kustomize、kubebuilder，operator；编程语言方向要求对语言对语言解释器（如py/js/lua/wasm等）、工具链、配套SDK有一定兴趣和实践经验。欢迎各位同学咨询或推荐（推荐成功独享全额推荐红包）。联系方式 chaishushan@gmail.com, shushan.css@alibaba-inc.com**
 
 ----
 
